@@ -6,7 +6,9 @@ This project is in polish.
 Thank You for stopping by.
 ## Demo
 
-I will provide a link to GitHub Pages once I have a build. In the mean time feel free to the vanilla version in my repository:
+https://bedicooper.github.io/taskList__react/
+
+I did not code interactions in this project yet. In the mean time feel free to test vanilla version in my repository:
 
 https://github.com/bedicooper/taskList
 
