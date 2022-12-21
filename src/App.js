@@ -1,6 +1,6 @@
 import Main from "./Main";
 import Section from "./Section";
-import Form from "./From";
+import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
 import Header from "./Header";
