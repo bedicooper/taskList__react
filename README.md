@@ -1,8 +1,41 @@
-# Getting Started with Create React App
+# Task List in React.js
+Hi! This project is still work in progress while I learn basics of React.js
+I've created it as a part of entry level online course for Frontend developers that I'm participating in.
+This project is in polish.
+
+Thank You for stopping by.
+## Demo
+
+I will provide a link to GitHub Pages once I have a build. In the mean time feel free to the vanilla version in my repository:
+
+https://github.com/bedicooper/taskList
+
+https://bedicooper.github.io/taskList/
+
+## Written in 
+
+In this project I'm using *javascript* with *React* library, *grid* and *flex*.
+## What's inside?
+My task list is built on a simple form with one input and a submit button.
+
+I've yet to implement button and form interactions.
+
+List of records will apear beneth the form, each record with two buttons, one to mark task as done and one to delete the task form the list.
+
+So far two task are hard-coded for testing purpuses.
+
+### What's new?
+I've rebuild document structure and styling using react.js. 
+
+![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
+
+### Coming soon
+
+Interactions!
+## Available Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
 In the project directory, you can run:
 
@@ -38,33 +71,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
