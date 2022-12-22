@@ -5,20 +5,24 @@ import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
 import Header from "./Header";
+import Counter from "./Counter";
 
 function App() {
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
   const [tasks, setTasks] = useState([]);
 
   const addNewTask = (content) => {
-    setTasks(tasks => [
-      ...tasks,
-      {
-        content,
-        done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-      },
-    ]);
+    if (content !== "") {
+      setTasks(tasks => [
+        ...tasks,
+        {
+          content,
+          done: false,
+          id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+        },
+      ]);
+    }
+    return tasks
   };
 
   const toggleHideAllDoneTasks = () => {
@@ -50,7 +54,8 @@ function App() {
       <Header title={"Lista zadań"} />
       <Section
         title={"Dodaj nowe zadanie"}
-        body={<Form tasks={tasks} addNewTask={addNewTask} />}
+        body={<Form tasks={tasks}
+          addNewTask={addNewTask} />}
       />
       <Section
         title={"Lista zadań"}
@@ -62,7 +67,11 @@ function App() {
             toggleTaskDone={toggleTaskDone}
           />
         }
-        extraHeaderContent={
+        firstExtraHeaderContent={
+          <Counter tasks={tasks}
+          />
+        }
+        secondExtraHeaderContent={
           <Buttons
             tasks={tasks}
             doneTasksHidden={doneTasksHidden}
