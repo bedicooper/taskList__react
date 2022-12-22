@@ -8,11 +8,6 @@ Thank You for stopping by.
 
 https://bedicooper.github.io/taskList__react/
 
-I did not code interactions in this project yet. In the mean time feel free to test vanilla version in my repository:
-
-https://github.com/bedicooper/taskList
-
-https://bedicooper.github.io/taskList/
 
 ## Written in 
 
@@ -20,20 +15,16 @@ In this project I'm using *javascript* with *React* library, *grid* and *flex*.
 ## What's inside?
 My task list is built on a simple form with one input and a submit button.
 
-I've yet to implement button and form interactions.
-
 List of records will apear beneth the form, each record with two buttons, one to mark task as done and one to delete the task form the list.
 
-So far two task are hard-coded for testing purpuses.
-
 ### What's new?
-I've rebuild document structure and styling using react.js. 
+Interactions, you can submit new tasks to the list, mark them as done or delete them. You can hide all done tasks or mark all as done with a single click. 
 
 ![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
 
 ### Coming soon
 
-Interactions!
+A counter of tasks yet to be done.
 ## Available Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
