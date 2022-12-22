@@ -17,6 +17,13 @@ function App() {
     setDoneTaskHidden(doneTasksHidden => !doneTasksHidden);
   };
 
+  const markAllTasksAsDone = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+      done: true,
+    })))
+  };
+
   const deleteTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
@@ -52,6 +59,7 @@ function App() {
             tasks={tasks}
             doneTasksHidden={doneTasksHidden}
             toggleHideAllDoneTasks={toggleHideAllDoneTasks}
+            markAllTasksAsDone={markAllTasksAsDone}
           />
         }
       />
