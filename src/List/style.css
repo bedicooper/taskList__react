@@ -30,19 +30,14 @@
     background-size: cover;
     padding: 0;
     transition: background-color 250ms ease-in-out;
+    color: rgb(255,255,255);
 }
 
 .list__button:hover {
     background-color: rgb(0, 150, 0);
-
-}
-
-.list__button--done {
-    background-image: url(https://raw.githubusercontent.com/bedicooper/taskList/main/img/checkmark.png);
 }
 
 .list__button--delete {
-    background-image: url(https://raw.githubusercontent.com/bedicooper/taskList/main/img/wastebasket.png);
     background-color: rgb(190, 0, 0);
 }
 

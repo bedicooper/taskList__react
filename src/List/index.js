@@ -8,10 +8,12 @@ const List = ({ tasks, doneTasksHidden, deleteTask, toggleTaskDone }) => (
         className={`list__item${task.done & doneTasksHidden ? " list__item--hidden" : ""}`}
       >
         <button
-          title="toggle done"
-          className={`list__button${task.done ? " list__button--done" : ""}`}
           onClick={() => toggleTaskDone(task.id)}
-        />
+          title="toggle done"
+          className={`list__button`}
+        >
+          {task.done ? "✔" : ""}
+        </button>
         <span
           className={`list__content${task.done ? " list__item--done" : ""}`}
         >
@@ -21,7 +23,9 @@ const List = ({ tasks, doneTasksHidden, deleteTask, toggleTaskDone }) => (
           onClick={() => deleteTask(task.id)}
           title="delete task"
           className="list__button list__button--delete"
-        />
+        >
+          🗑
+        </button>
       </li>
     )}
   </ul >
