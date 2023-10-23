@@ -1,9 +1,15 @@
-const Counter = ({ tasks }) => (
-    <div className="list__counter">
-        {tasks.length !== 0 && (
-            <><span>liczba zadań: {tasks.length}</span></>
-        )}
-    </div>
-);
+const Counter = ({ tasks }) => {
+
+    const countUndone = (array) => array.filter(task => !task.done);
+
+    return (
+        <div className="list__counter">
+            {tasks.length
+                ? <span>pozostało zadań: {countUndone(tasks).length}</span>
+                : ``
+            }
+        </div>
+    )
+};
 
 export default Counter;
