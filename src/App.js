@@ -12,17 +12,14 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const addNewTask = (content) => {
-    if (content !== "") {
-      setTasks(tasks => [
-        ...tasks,
-        {
-          content,
-          done: false,
-          id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-        },
-      ]);
-    }
-    return tasks
+    setTasks(tasks => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      },
+    ]);
   };
 
   const toggleHideAllDoneTasks = () => {
