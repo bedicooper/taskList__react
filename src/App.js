@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Main from "./Main";
 import Section from "./Section";
 import Form from "./Form";
@@ -10,6 +10,16 @@ import Counter from "./Counter";
 function App() {
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
   const [tasks, setTasks] = useState([]);
+
+  const storedTasks = JSON.parse(localStorage.getItem("tasks"));
+
+  useEffect(() => {
+    storedTasks ? setTasks(storedTasks) : setTasks([]);
+  },[]);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addNewTask = (content) => {
     setTasks(tasks => [
@@ -52,7 +62,8 @@ function App() {
       <Section
         title={"Dodaj nowe zadanie"}
         body={<Form tasks={tasks}
-          addNewTask={addNewTask} />}
+          addNewTask={addNewTask}
+        />}
       />
       <Section
         title={"Lista zadań"}
