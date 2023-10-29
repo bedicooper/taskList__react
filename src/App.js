@@ -7,13 +7,17 @@ import Buttons from "./Buttons";
 import Header from "./Header";
 import Counter from "./Counter";
 
+const useSaveStateToStorage = (key, value) => {
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [value]);
+};
+
 function App() {
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
   const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
 
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+  useSaveStateToStorage("tasks", tasks);
 
   const addNewTask = (content) => {
     setTasks(tasks => [
