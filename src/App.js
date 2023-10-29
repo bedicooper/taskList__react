@@ -13,9 +13,18 @@ const useSaveStateToStorage = (key, value) => {
   }, [value]);
 };
 
+
 function App() {
+  const getInitialStateFromStorage = () => {
+    const localStorageState = localStorage.getItem("tasks");
+    if (localStorageState === null) {
+      return []
+    }
+    return JSON.parse(localStorageState);
+  };
+
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
+  const [tasks, setTasks] = useState(getInitialStateFromStorage);
 
   useSaveStateToStorage("tasks", tasks);
 
