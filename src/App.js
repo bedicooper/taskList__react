@@ -9,13 +9,7 @@ import Counter from "./Counter";
 
 function App() {
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
-  const [tasks, setTasks] = useState([]);
-
-  const storedTasks = JSON.parse(localStorage.getItem("tasks"));
-
-  useEffect(() => {
-    storedTasks ? setTasks(storedTasks) : setTasks([]);
-  },[]);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
