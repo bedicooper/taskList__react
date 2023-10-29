@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Main from "./Main";
 import Section from "./Section";
 import Form from "./Form";
@@ -6,27 +6,12 @@ import List from "./List";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Counter from "./Counter";
-
-const useSaveStateToStorage = (key, value) => {
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value));
-  }, [value]);
-};
-
+import { useLocalStorageState } from "./useLocalStorageState";
 
 function App() {
-  const getInitialStateFromStorage = () => {
-    const localStorageState = localStorage.getItem("tasks");
-    if (localStorageState === null) {
-      return []
-    }
-    return JSON.parse(localStorageState);
-  };
 
   const [doneTasksHidden, setDoneTaskHidden] = useState(false);
-  const [tasks, setTasks] = useState(getInitialStateFromStorage);
-
-  useSaveStateToStorage("tasks", tasks);
+  const [tasks, setTasks] = useLocalStorageState("tasks", [])
 
   const addNewTask = (content) => {
     setTasks(tasks => [
