@@ -9,30 +9,47 @@ Thank You for stopping by.
 https://bedicooper.github.io/taskList__react/
 
 
-## Written in 
+## Used technologies 
+|   HTML        |   CSS           |   JavaScript        | ReactJS          |
+| :---:         | :---:           | :---:               | :---:            |
+| Google Fonts  | Normalize CSS   | ES6                 | create-react-app |
+| BEM           | grid            |                     | Webpack          |
+|               | flex            |                     | Babel            |
+|               | media queries   |                     | React DOM        |
+|               |                 |                     | State, Effect and Ref hooks    |
+|               |                 |                     | Custom hooks     |
+|               |                 |                     | Style Components |
 
-In this project I'm using *javascript* with *React* library, *grid* and *flex*.
 ## What's inside?
 My task list is built on a simple form with one input and a submit button.
 
 List of records will apear beneth the form, each record with two buttons, one to mark task as done and one to delete the task form the list.
 
-### What's new?
-Interactions, you can submit new tasks to the list, mark them as done or delete them. You can hide all done tasks or mark all as done with a single click. 
-
 ![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
 
-### Coming soon
+### What's new? _v.0.3.0_
+**0.3.0:**
+Refactor with Style Components.
 
-A counter of tasks yet to be done.
+**0.2.0:**
+I've added a counter of tasks yet to be done,
+moved task logic to custom hook.
+Taski list is now stored client-side. 
+
+### How to use my App?
+1. Enter the task to be performed. Empty input will not be accepted.
+2. The entered task will appear on the list between the two buttons,
+3. Mark the task as completed with green, and remove the task from the list with the red button.
+4. Above the list there is a counter showing how many tasks remain to be completed.
+5. With one click you can mark all tasks as completed and also hide all completed tasks.
+
 ## Available Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -40,7 +57,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -50,7 +67,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
