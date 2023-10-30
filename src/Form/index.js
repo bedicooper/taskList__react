@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
 
-    useEffect(() => {
+    const inputFocusOnSubmit = () => {
         inputRef.current.focus();
-    }, []);
+    };
 
     const onInputChange = ({ target }) => setNewTaskContent(target.value);
 
@@ -22,6 +22,7 @@ const Form = ({ addNewTask }) => {
 
         addNewTask(newTaskTrimmedContent);
         setNewTaskContent("");
+        inputFocusOnSubmit();
     };
 
     return (
