@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { useTask } from "./useTask";
 import Main from "./Main";
 import Section from "./Section";
 import Form from "./Form";
-import List from "./List";
+import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Counter from "./Counter";
-import { useTask } from "./useTask";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
   };
 
   return (
+    <>
+    <GlobalStyle />
     <Main>
       <Header title={"Lista zadań"} />
       <Section
@@ -35,7 +38,7 @@ function App() {
       <Section
         title={"Lista zadań"}
         body={
-          <List
+          <Tasks
             tasks={tasks}
             doneTasksHidden={doneTasksHidden}
             deleteTask={deleteTask}
@@ -56,6 +59,7 @@ function App() {
         }
       />
     </Main>
+    </>
   );
 }
 

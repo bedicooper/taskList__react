@@ -1,10 +1,12 @@
-.section {
+import styled, { css } from "styled-components";
+
+export const Wrapper = styled.section`
     background-color: #fff;
     margin: 10px 0;
     box-shadow: 0 0 5px #ddd;
-}
+`;
 
-.section__header {
+export const SectionHeader = styled.header`
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
@@ -12,25 +14,21 @@
     align-items: center;
     padding: 20px;
     border-bottom: 2px solid #eee;
-}
 
-@media (max-width: 767px) {
-    .section__header {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+`;
 
-.section__title {
+export const Title = styled.h2`
     margin: 0;
-}
+`;
 
-.section__container {
+export const Container = styled.div`
     padding: 20px;
-}
 
-@media (max-width: 767px) {
-    .section__container {
+    @media (max-width: 767px) {
         flex-basis: 100%;
         justify-self: center;
     }
-}
+`;
