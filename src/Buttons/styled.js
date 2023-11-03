@@ -9,7 +9,7 @@ export const Button = styled.button`
     margin: 0 0 0 20px;
     background-color: transparent;
     border: none;
-    color: hsl(187, 100%, 26%);
+    color: ${({ theme }) => theme.accentColor};
     transition: color 250ms ease-in-out;
 
     @media (max-width: 767px) {
@@ -18,7 +18,7 @@ export const Button = styled.button`
     }
 
     &:hover {
-        color: hsl(187, 100%, 35%);
+        color: ${({ theme }) => theme.accentHover};
     }
 
     &:disabled {

@@ -14,13 +14,13 @@ export const Item = styled.li`
     padding: 10px;
     border-bottom: 2px solid #eee;
 
-    ${({ hidden }) => hidden && css`
+    ${({ $hidden }) => $hidden && css`
         display: none;
     `}
 `;
 
 export const Content = styled.span`
-    ${({ done }) => done && css`
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
 `;
@@ -40,7 +40,7 @@ export const Button = styled.button`
         background-color: rgb(0, 150, 0);
     }
 
-    ${({ remove }) => remove && css`
+    ${({ $remove }) => $remove && css`
         background-color: rgb(190, 0, 0);
 
         &:hover {

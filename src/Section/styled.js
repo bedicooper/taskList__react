@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.primaryColor};
     margin: 10px 0;
     box-shadow: 0 0 5px #ddd;
 `;
@@ -13,7 +13,7 @@ export const SectionHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid ${({ theme }) => theme.secondaryColor};
 
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
