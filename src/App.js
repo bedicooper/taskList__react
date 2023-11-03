@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTask } from "./useTask";
-import Main from "./Main";
+import { MainContainer } from "./Main/MainContainer";
 import Section from "./Section";
 import Form from "./Form";
 import Tasks from "./Tasks";
@@ -28,7 +28,7 @@ function App() {
   return (
     <>
     <GlobalStyle />
-    <Main>
+    <MainContainer>
       <Header title={"Lista zadań"} />
       <Section
         title={"Dodaj nowe zadanie"}
@@ -58,7 +58,7 @@ function App() {
           />
         }
       />
-    </Main>
+    </MainContainer>
     </>
   );
 }
