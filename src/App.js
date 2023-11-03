@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTask } from "./useTask";
 import { MainContainer } from "./Main/MainContainer";
 import Section from "./Section";
@@ -7,7 +6,6 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Counter from "./Counter";
-import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
 
@@ -17,18 +15,13 @@ function App() {
     toggleTaskDone,
     markAllTasksAsDone,
     addNewTask,
+    doneTasksHidden,
+    toggleHideAllDoneTasks,
   } = useTask();
-
-  const [doneTasksHidden, setDoneTaskHidden] = useState(false);
-
-  const toggleHideAllDoneTasks = () => {
-    setDoneTaskHidden(doneTasksHidden => !doneTasksHidden);
-  };
 
   return (
     <>
-    <GlobalStyle />
-    <MainContainer>
+        <MainContainer>
       <Header title={"Lista zadań"} />
       <Section
         title={"Dodaj nowe zadanie"}
