@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export const Container = styled.form`
+export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
@@ -16,15 +16,15 @@ export const Field = styled.input`
 `;
 
 export const SubmitButton = styled.button`
-    background-color: #007383;
+    background-color: ${({ theme }) => theme.accentColor};
     color: #fff;
     font-weight: 300;
-    border: 1px solid #007383;
+    border: 1px solid ${({ theme }) => theme.accentColor};
     padding: 8px;
     transition: 500ms ease-in-out;
 
     &:hover {
-        background-color: hsl(187, 100%, 30%);
+        background-color: ${({ theme }) => theme.accentHover};
         transform: scale(1.1);
 
         @media (max-width: 767px) {
@@ -33,7 +33,7 @@ export const SubmitButton = styled.button`
     }
 
     &:active {
-        background-color: hsl(187, 100%, 35%);
+        background-color: ${({ theme }) => theme.accentActive};
         transform: scale(1.1);
     }
 `;
