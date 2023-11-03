@@ -3,7 +3,7 @@ const Counter = ({ tasks }) => {
     const countUndone = (array) => array.filter(task => !task.done);
 
     return (
-        <div className="list__counter">
+        <div>
             {tasks.length
                 ? <span>pozostało zadań: {countUndone(tasks).length}</span>
                 : ``
