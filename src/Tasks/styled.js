@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid ${({ theme }) => theme.color.secondary};
 
     ${({ $hidden }) => $hidden && css`
         display: none;
