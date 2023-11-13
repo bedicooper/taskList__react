@@ -4,17 +4,6 @@ import { useLocalStorageState } from "./useLocalStorageState";
 export const useTask = () => {
   const [tasks, setTasks] = useLocalStorageState("tasks", []);
 
-  const addNewTask = (content) => {
-    setTasks(tasks => [
-      ...tasks,
-      {
-        content,
-        done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-      },
-    ]);
-  };
-
   const markAllTasksAsDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task,
@@ -46,7 +35,6 @@ export const useTask = () => {
     deleteTask,
     toggleTaskDone,
     markAllTasksAsDone,
-    addNewTask,
     doneTasksHidden,
     toggleHideAllDoneTasks,
   };
