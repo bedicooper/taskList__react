@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Tasks from './features/tasks/Tasks';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyle, theme } from './GlobalStyle';
@@ -12,8 +11,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {/* <App /> */}
-      <Tasks />
+      <App />
     </ThemeProvider>
   </React.StrictMode>
 );
