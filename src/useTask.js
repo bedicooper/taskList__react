@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useLocalStorageState } from "./useLocalStorageState";
 
 export const useTask = () => {
@@ -24,18 +23,9 @@ export const useTask = () => {
     }))
   };
 
-  const [doneTasksHidden, setDoneTaskHidden] = useState(false);
-
-  const toggleHideAllDoneTasks = () => {
-    setDoneTaskHidden(doneTasksHidden => !doneTasksHidden);
-  };
-
   return {
-    tasks,
     deleteTask,
     toggleTaskDone,
     markAllTasksAsDone,
-    doneTasksHidden,
-    toggleHideAllDoneTasks,
   };
 };
