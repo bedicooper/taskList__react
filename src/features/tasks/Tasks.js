@@ -7,7 +7,7 @@ import Buttons from "./Buttons";
 import Header from "../../common/Header";
 import Counter from "../../common/Counter";
 
-function Tasks() {
+const Tasks = () => {
 
   const {
     tasks,
