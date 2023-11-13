@@ -1,4 +1,9 @@
-const Counter = ({ tasks }) => {
+import { useSelector } from "react-redux";
+import { selectTasks } from "../../features/tasks/tasksSlice";
+
+const Counter = () => {
+
+    const { tasks } = useSelector(selectTasks);
 
     const countUndone = (array) => array.filter(task => !task.done);
 
