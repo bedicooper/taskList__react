@@ -11,7 +11,6 @@ const Tasks = () => {
 
   const {
     deleteTask,
-    toggleTaskDone,
     markAllTasksAsDone,
   } = useTask();
 
@@ -28,7 +27,6 @@ const Tasks = () => {
           body={
             <TaskList
               deleteTask={deleteTask}
-              toggleTaskDone={toggleTaskDone}
             />
           }
           firstExtraHeaderContent={
