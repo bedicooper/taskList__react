@@ -1,7 +1,9 @@
 import Tasks from "./features/tasks/Tasks"
 
 function App() {
-    <Tasks />
+    return (
+        <Tasks />
+    )
 };
 
 export default App;
