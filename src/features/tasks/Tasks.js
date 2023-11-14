@@ -11,7 +11,6 @@ const Tasks = () => {
 
   const {
     deleteTask,
-    markAllTasksAsDone,
   } = useTask();
 
   return (
@@ -33,9 +32,7 @@ const Tasks = () => {
             <Counter />
           }
           secondExtraHeaderContent={
-            <Buttons
-              markAllTasksAsDone={markAllTasksAsDone}
-            />
+            <Buttons />
           }
         />
       </MainContainer>
