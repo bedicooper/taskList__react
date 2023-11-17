@@ -20,12 +20,17 @@
         "id": "-Z_RO1K6ED8RfefK4vXCN"
     },
     {
-        "content": "Zad.5: Ukończ wszytskie zadania",
+        "content": "Zad.5: Kliknij we mnie",
+        "done": false,
+        "id": "BIklYrGIv-tEm0ODiToSK"
+    },
+    {
+        "content": "Zad.6: Odśwież stornę",
         "done": false,
         "id": "H43qoidBk053xO8IJNXkK"
     },
     {
-        "content": "Zad.6: Odśwież stornę",
+        "content": "Zad.7: Ukończ wszytskie zadania",
         "done": false,
         "id": "fJ6huIK4yHSbAvIDk1Ph9"
     }

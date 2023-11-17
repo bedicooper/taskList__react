@@ -28,7 +28,10 @@ List of records will apear beneth the form, each record with two buttons, one to
 
 ![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
 
-### What's new? _v.0.4.2_
+### What's new? _v.0.4.3_
+**0.4.3**
+Added an about me page with React Router, as well as subpages with taks details
+
 **0.4.2**
 Brought back localStorage for tasks with redux-saga!
 
