@@ -5,6 +5,7 @@ import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Header from "../../../common/Header";
 import Counter from "../../../common/Counter";
+import Search from "./Search";
 
 const Tasks = () => (
 
@@ -16,6 +17,10 @@ const Tasks = () => (
       <Section
         title={"Dodaj nowe zadanie"}
         body={<Form />}
+      />
+      <Section
+        title={"Wyszukiwarka"}
+        body={<Search />}
       />
       <Section
         title={"Lista zadań"}
