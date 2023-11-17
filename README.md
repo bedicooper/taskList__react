@@ -14,9 +14,9 @@ https://bedicooper.github.io/taskList__react/
 | :---:         | :---:           | :---:               | :---:            |
 | Google Fonts  | Normalize CSS   | ES6+                | create-react-app |
 | BEM           | grid            | **Redux**           | Webpack          |
-|               | flex            |                     | Babel            |
-|               | media queries   |                     | React DOM        |
-|               |                 |                     | State, Effect and Ref hooks    |
+|               | flex            | **RTK**             | Babel            |
+|               | media queries   | **Redux Saga**      | React DOM        |
+|               |                 | **fetch**           | State, Effect and Ref hooks    |
 |               |                 |                     | Custom hooks     |
 |               |                 |                     | Style Components |
 |               |                 |                     | **react-redux**  |
@@ -28,7 +28,11 @@ List of records will apear beneth the form, each record with two buttons, one to
 
 ![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
 
-### What's new? _v.0.4.0_
+### What's new? _v.0.4.1_
+**0.4.1**
+Added a button that sets 6 example tasks as a app tutorial. 
+Added a saga to handle fetching those tasks form a local .json file.
+
 **0.4.0:**
 Refactor to Redux. Interactions moved to reducers. App stop saving task list state to LocalStorage { for now }
 
