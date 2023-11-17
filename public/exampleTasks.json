@@ -1,0 +1,32 @@
+[
+    {
+        "content": "Zad.1: Oznacz to zadanie jako ukończone",
+        "done": false,
+        "id": 1
+    },
+    {
+        "content": "Zad.2: Usuń to zadanie",
+        "done": false,
+        "id": 2
+    },
+    {
+        "content": "Zad.3: Ukryj ukończone zadania",
+        "done": false,
+        "id": 3
+    },
+    {
+        "content": "Zad.4: Pokaż ukończone zadania",
+        "done": false,
+        "id": 4
+    },
+    {
+        "content": "Zad.5: Ukończ wszytskie zadania",
+        "done": false,
+        "id": 5
+    },
+    {
+        "content": "Zad.6: Odśwież stornę",
+        "done": false,
+        "id": 6
+    }
+]
