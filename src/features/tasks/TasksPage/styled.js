@@ -5,7 +5,7 @@ export const Button = styled.button`
     background-color: transparent;
     border: none;
     color: ${({ theme }) => theme.color.accent};
-    transition: color 250ms ease-in-out;
+    transition: color 150ms ease-in-out;
 
     @media (max-width: ${({ theme }) => theme.brakepoints.moblieMax}px) {
         flex-basis: 100%;
