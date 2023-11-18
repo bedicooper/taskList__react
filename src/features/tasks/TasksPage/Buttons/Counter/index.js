@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectTasks } from "../../features/tasks/tasksSlice";
+import { selectTasks } from "../../../tasksSlice";
 
 const Counter = () => {
     const tasks = useSelector(selectTasks);

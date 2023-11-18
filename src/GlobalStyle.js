@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         font-family: 'Montserrat', sans-serif;
         background-color: ${({ theme }) => theme.color.secondary};
+        height: 100vh;
     }
     `;
 

@@ -7,7 +7,6 @@ const Section = ({ title, body, firstExtraHeaderContent, secondExtraHeaderConten
                 {title}
             </Title>
             {firstExtraHeaderContent}
-            {secondExtraHeaderContent}
         </SectionHeader>
         <Container>
             {body}

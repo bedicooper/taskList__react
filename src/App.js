@@ -1,4 +1,5 @@
-import { HashRouter, NavLink, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import Navigation from './common/Navigation';
 import TasksPage from './features/tasks/TasksPage';
 import TaskPage from './features/tasks/TaskPage';
 import AuthorPage from './features/author/AuthorPage';
@@ -6,10 +7,7 @@ import AuthorPage from './features/author/AuthorPage';
 function App() {
   return (
     <HashRouter>
-      <nav>
-        <li><NavLink activeClassName="" to="/zadania">Zadania</NavLink></li>
-        <li><NavLink activeClassName="" to="/autor">O Autorze</NavLink></li>
-      </nav>
+      <Navigation/>
 
       <Switch>
         <Route path="/zadania/:id">

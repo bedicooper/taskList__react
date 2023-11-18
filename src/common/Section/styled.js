@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
 
 export const SectionHeader = styled.header`
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
