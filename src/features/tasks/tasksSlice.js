@@ -26,13 +26,14 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === taskId);
             tasks.splice(index, 1);
         },
-        fetchExampleTasks: () => { },
+        fetchExampleTasks: state => { 
+            state.loading = !state.loading;
+        },
         setExampleTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
         },
         toggleLoading: state => {
             state.loading = !state.loading;
-            console.log(state.loading);
         },
     },
 });
