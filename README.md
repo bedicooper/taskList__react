@@ -13,13 +13,17 @@ https://bedicooper.github.io/taskList__react/
 |   HTML        |   CSS           |   JavaScript        | ReactJS          |
 | :---:         | :---:           | :---:               | :---:            |
 | Google Fonts  | Normalize CSS   | ES6+                | create-react-app |
-| BEM           | grid            | **Redux**           | Webpack          |
-|               | flex            | **RTK**             | Babel            |
-|               | media queries   | **Redux Saga**      | React DOM        |
-|               |                 | **fetch**           | State, Effect and Ref hooks    |
+| BEM           | grid            | Redux               | Webpack          |
+|               | flex            | RTK                 | Babel            |
+|               | media queries   | Redux Saga          | React DOM        |
+|               |                 | fetch               | State, Effect and Ref hooks    |
 |               |                 |                     | Custom hooks     |
 |               |                 |                     | Style Components |
-|               |                 |                     | **react-redux**  |
+|               |                 |                     | react-redux      |
+|               |                 |                     | **React Router** |
+|               |                 |                     | **useParams**    |
+|               |                 |                     | **useLocation**  |
+|               |                 |                     | **useHistory**   |
 
 ## What's inside?
 My task list is built on a simple form with one input and a submit button.
