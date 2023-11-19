@@ -10,5 +10,5 @@ export default () => {
                 <StyledNavLink to="/autor">O Autorze</StyledNavLink>
             </Container>
         </Wrapper>
-    )
+    );
 };

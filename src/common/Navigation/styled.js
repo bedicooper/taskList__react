@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.ul`
     display: flex;
+    margin: 0;
     justify-content: center;
     background-color: ${({ theme }) => theme.color.accent};;
 `;
 
-export const Container = styled.div`
+export const Container = styled.li`
     width: 120px;
     padding: 10px;
+    list-style-type: none;
+    text-align: center;
 `;
 
 const activeClassName = "link-active";
