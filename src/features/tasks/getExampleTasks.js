@@ -1,5 +1,7 @@
+import exampleTasksURL from "./exampleTasksURL";
+
 export const getExampleTasks = async () => {
-    const response = await fetch("taskList__react/exampleTasks.json");
+    const response = await fetch(exampleTasksURL);
 
     if (!response.ok) {
         new Error(response.statusText);
