@@ -1,4 +1,4 @@
-import { MainContainer } from "../../../common/Main/MainContainer";
+// import { MainContainer } from "../../../common/Main/MainContainer";
 import Section from "../../../common/Section";
 import Form from "./Form";
 import TaskList from "./TaskList";
@@ -8,27 +8,24 @@ import Search from "./Search";
 import FetchButton from "./FetchButton";
 
 const Tasks = () => (
-
   <>
-    <MainContainer>
-      <Header
-        title={"Lista zadań"}
-      />
-      <Section
-        title={"Dodaj nowe zadanie"}
-        firstExtraHeaderContent={<FetchButton />}
-        body={<Form />}
-      />
-      <Section
-        title={"Wyszukiwarka"}
-        body={<Search />}
-      />
-      <Section
-        title={"Lista zadań"}
-        body={<TaskList />}
-        firstExtraHeaderContent={<Buttons />}
-      />
-    </MainContainer>
+    <Header
+      title={"Lista zadań"}
+    />
+    <Section
+      title={"Dodaj nowe zadanie"}
+      firstExtraHeaderContent={<FetchButton />}
+      body={<Form />}
+    />
+    <Section
+      title={"Wyszukiwarka"}
+      body={<Search />}
+    />
+    <Section
+      title={"Lista zadań"}
+      body={<TaskList />}
+      firstExtraHeaderContent={<Buttons />}
+    />
   </>
 );
 

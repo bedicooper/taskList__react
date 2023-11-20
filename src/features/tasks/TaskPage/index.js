@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { MainContainer } from "../../../common/Main/MainContainer";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { selectTaskById } from '../tasksSlice';
@@ -10,7 +9,7 @@ function TaskPage() {
     const task = useSelector(state => selectTaskById(state, id));
 
     return (
-        <MainContainer>
+        <>
             <Header
                 title={"Szczegóły zadania"}
             />
@@ -22,7 +21,7 @@ function TaskPage() {
                         : "Coś poszło nie tak. Wróc do strony z zadaniami"
                 }
             />
-        </MainContainer>
+        </>
     )
 };
 

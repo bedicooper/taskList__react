@@ -1,9 +1,8 @@
-import { MainContainer } from "../../common/Main/MainContainer";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 
 const Author = () => (
-  <MainContainer>
+  <>
     <Header
       title={"O Autorze"}
     />
@@ -34,7 +33,7 @@ const Author = () => (
         </>
       }
     />
-  </MainContainer>
+  </>
 );
 
 export default Author;
