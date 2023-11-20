@@ -8,16 +8,16 @@ Thank You for stopping by.
 
 https://bedicooper.github.io/taskList__react/
 
-
-## Used technologies 
+## Technologies used throughout the projects life
+_Newest additions are in **bold**_
 |   HTML        |   CSS           |   JavaScript        | ReactJS          |
 | :---:         | :---:           | :---:               | :---:            |
 | Google Fonts  | Normalize CSS   | ES6+                | create-react-app |
 | BEM           | grid            | Redux               | Webpack          |
 |               | flex            | RTK                 | Babel            |
 |               | media queries   | Redux Saga          | React DOM        |
-|               |                 | fetch               | State, Effect and Ref hooks    |
-|               |                 |                     | Custom hooks     |
+|               |                 | fetch w/ asyc/await | State, Effect and Ref hooks    |
+|               |                 | **URLSearchParams** | Custom hooks     |
 |               |                 |                     | Style Components |
 |               |                 |                     | react-redux      |
 |               |                 |                     | **React Router** |
@@ -30,11 +30,25 @@ My task list is built on a simple form with one input and a submit button.
 
 List of records will apear beneth the form, each record with two buttons, one to mark task as done and one to delete the task form the list.
 
-![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList/main/img/websiteScreenshot.JPG)
+![screenshot of the website showing task list with three items below an input form. Second item on the list is marked as done, its text stroke through](https://raw.githubusercontent.com/bedicooper/taskList__react/main/websiteScreenshot-v0.4.4.png)
+_Above screen comes from v.0.4.4_
 
-### What's new? _v.0.4.3_
+### How to use my App?
+Sience _0.4.1_ there is a new button to fetch example tasks. Completing those tasks is a de-facto tutorial for the app. Enjoy! 
+
+1. Enter the task to be performed. Empty input will not be accepted.
+2. The entered task will appear on the list between the two buttons,
+3. Mark the task as completed with green, and remove the task from the list with the red button.
+4. Above the list there is a counter showing how many tasks remain to be completed.
+5. With one click you can mark all tasks as completed and also hide all completed tasks.
+6. New input filed lets You filter the tasks.
+
+### What's new? _v.0.4.4_
+**0.4.4**
+I've added an input field to filter tasks by their content. To achive that I'm using useLocation, useHistory from react-router and URLSearchParams.
+
 **0.4.3**
-Added an about me page with React Router, as well as subpages with taks details
+Added an about me page with React Router, as well as subpages with tasks details
 
 **0.4.2**
 Brought back localStorage for tasks with redux-saga!
@@ -53,13 +67,6 @@ Refactor with Style Components.
 I've added a counter of tasks yet to be done,
 moved task logic to custom hook.
 Taski list is now stored client-side. 
-
-### How to use my App?
-1. Enter the task to be performed. Empty input will not be accepted.
-2. The entered task will appear on the list between the two buttons,
-3. Mark the task as completed with green, and remove the task from the list with the red button.
-4. Above the list there is a counter showing how many tasks remain to be completed.
-5. With one click you can mark all tasks as completed and also hide all completed tasks.
 
 ## Available Scripts
 
